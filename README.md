@@ -31,5 +31,5 @@ As a visitor, I should be able to do the following:
 ## Final Deliverables:
 - Notebook file(.ipynb).
 - README.md file.
-- Due Date: Sat 29, at 11:00 p.m.
+- Due Date: Sun 29, at 11:00 AM.
 - The Final presentation will be on Sunday (5 min for each one).
