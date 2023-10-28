@@ -1,35 +1,32 @@
-# Bootcamp-Project-1-Python
-### Based on what you’ve learned until now, create a project of your choosing (impress us with your imagination). This project must at least satisfy the following minimum requirements:
+# Personal Finance Tracker
 
-- Use at least 3 different data types.
-- Use lists or dictionaries or tuples or sets.
-- Use loops.
-- Use functions that return an output.
-- Use conditions.
-- Use a Lambda function.
+The Personal Finance Tracker is an application that helps you track your personal financial transactions. It allows you to add transactions, calculate total expenses and total income, generate summary reports, sort transactions by amount, categorize transactions, generate monthly expense reports, and visualize spending patterns.
+
+## Features
+
+- **Add Transaction**: Add a new financial transaction by specifying the category, amount, and date.
+- **Calculate Total Expenses**: Calculate the total expenses based on the recorded transactions.
+- **Calculate Total Income**: Calculate the total income based on the recorded transactions.
+- **Generate Summary Report**: Generate a summary report that includes total expenses, total income, and net balance.
+- **Sort Transactions by Amount**: Sort the recorded transactions by amount in ascending order.
+- **Categorize Transactions**: Display the available transaction categories.
+- **Generate Monthly Expense Report**: Calculate and display the total expenses for each month.
+- **Visualize Spending Patterns**: Generate a pie chart that visualizes spending patterns based on transaction categories and amounts.
 
 
+## Usage
 
-## Example: Riyadh Season Reservations
+1. When prompted, enter a number from 1 to 9 to select the desired feature.
+2. Follow the specific prompts for each feature to add transactions, generate reports, or visualize spending patterns.
+3. To exit the application, select option 9.
 
-**Overview:** An online website that shows different events. The visitor should be able to do the following tasks for the store to function properly.
+## Dependencies
 
-As a visitor, I should be able to do the following:
+- Python 
+- Matplotlib (for visualizing spending patterns)
 
-- Browse Events.
-- View the event info (summary, time, price, place, etc.)
-- Search for an Event.
-- Get recommendations for my next visit based on my ticket purchase history.
-- Add tickets to the shopping cart.
-- Remove a ticket from the shopping cart.
-- List the tickets in my shopping cart.
-- Modify the number of the ticket (by default one ticket).
-- Continue to checkout.
-- Get a QR code for my ticket.
-- Review my coming events.
+.
 
-## Final Deliverables:
-- Notebook file(.ipynb).
-- README.md file.
-- Due Date: Sun 29, at 11:00 AM.
-- The Final presentation will be on Sunday (5 min for each one).
+## Acknowledgements
+
+The Personal Finance Tracker project was inspired by the need for a simple tool to track personal finances and understand spending patterns.
