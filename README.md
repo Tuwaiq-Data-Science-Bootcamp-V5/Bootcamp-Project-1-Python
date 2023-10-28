@@ -1,35 +1,27 @@
-# Bootcamp-Project-1-Python
-### Based on what you’ve learned until now, create a project of your choosing (impress us with your imagination). This project must at least satisfy the following minimum requirements:
+# Catch the spy Game
 
-- Use at least 3 different data types.
-- Use lists or dictionaries or tuples or sets.
-- Use loops.
-- Use functions that return an output.
-- Use conditions.
-- Use a Lambda function.
+Welcome to " Catch the spy"  Game!
+
+This text game challenges you to identify a spy within the police department by gathering information about various officers.
 
 
+## Introduction
 
-## Example: Riyadh Season Reservations
+Catch the Spy is a text Game  that engages players in an investigation to find a spy hidden among officers of a police department. Player investigate officer profiles, and make accusations to identify the spy.
 
-**Overview:** An online website that shows different events. The visitor should be able to do the following tasks for the store to function properly.
+## How to Play
 
-As a visitor, I should be able to do the following:
+After running the code, you will need to enter your name , then a set of options will show up, you will need to investigate the characters to catch the spy by looking into the officer's profiles, and whenever you think that you have identifyed the spy, write his name in option 5 and the program will return if you catched the spy or not!
 
-- Browse Events.
-- View the event info (summary, time, price, place, etc.)
-- Search for an Event.
-- Get recommendations for my next visit based on my ticket purchase history.
-- Add tickets to the shopping cart.
-- Remove a ticket from the shopping cart.
-- List the tickets in my shopping cart.
-- Modify the number of the ticket (by default one ticket).
-- Continue to checkout.
-- Get a QR code for my ticket.
-- Review my coming events.
+## Game Options
 
-## Final Deliverables:
-- Notebook file(.ipynb).
-- README.md file.
-- Due Date: Sun 29, at 11:00 AM.
-- The Final presentation will be on Sunday (5 min for each one).
+1. **Ask about the officer's position:** Ask about an officer's role in the police department.
+2. **Ask for a background:** Request information about an officer's background.
+3. **Look for officer's clue:** Investigate clues related to an officer.
+4. **Look for officer's suspicions:** Explore suspicions of the officer.
+5. **Make an accusation:** Guess the identity of the spy by making an accusation.
+6. **List characters alphabetically:** View a list of officers involved in the investigation.
+
+
+
+
