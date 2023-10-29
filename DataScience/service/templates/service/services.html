@@ -1,0 +1,81 @@
+{% extends 'main/base.html' %}
+{% block title %} All Services {% endblock %}
+{% block content %}
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="/static/images/2.avif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> Simple Makeup ..</h5>
+        <p class="card-text"> Enhancing natural features with minimal products and techniques. Soft colors and healthy skin.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary"> Please log in to make a reservation.
+        </small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="/static/images/2022.webp"  class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Bride Makeup</h5>
+        <p class="card-text">Shine on your wedding day with a flawless look that enhances your natural beauty and lasts all day.. We use high-quality cosmetics and advanced techniques to create an unforgettable appearance..</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Please log in to make a reservation.
+        </small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="/static/images/3.png"  class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Full Makeup ..</h5>
+        <p class="card-text">Comprehensive application of cosmetics for photoshoots and important occasions.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Please log in to make a reservation.
+        </small>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+<div class="row mb-2 ">
+
+    {% if request.user.is_staff%}
+    <div class="text-end">
+        <a class="btn btn-outline-warning ms-3 " href="{% url 'service:add_Service' %}">Add Service »</a>
+    </div>
+    {%endif%}
+    {% for service in service %}
+    
+    <div class="col-md-4 ">
+       
+        <div class="container  backpic2 p-3 rounded">
+            <div class="row g-0 border rounded overflow-hidden bg-light flex-md-row mb-4 shadow-sm h-md-200 position-relative ">
+                <div class="row ps-4" >
+                    <img src="{{service.image.url}}" width="100vh"/>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static  ">
+                    <strong class="d-inline-block mb-2 text-primary-emphasis"></strong>
+                    <h3 class=" display-8 titleblog">{{service.title}}</h3>
+                    <div class="mb-1 text-body-secondary titlerecipes"> create at :{{service.created_at}}</div>
+
+                    <a class="btn " href="{% url 'service:service_detail' service.id %}">MORE »</a>
+                    
+            
+                </div>
+       
+            </div>
+        </div> 
+     </div>
+{%endfor%}
+</div>
+ 
+</div>
+{%endblock%}
