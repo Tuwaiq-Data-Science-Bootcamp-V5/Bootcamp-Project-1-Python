@@ -16,17 +16,24 @@ This is a simple Python code for a hospital management system. It allows patient
 
 #### Example:
 **how to book an appointment?**
+
 ![book](how_to_book_an.PNG)
 **The new appointment has been added to our database:**
+
 ![book](Am.PNG)
 **how to add now patient?**
+
 ![book](add_p.PNG)
 **The new patient has been added to our database:**
+
 ![book](add_db.PNG)
 **The doctor:**
+
 ![book](doc.PNG)
 **The code creates a text file and adds patient appointment information to it:**
+
 ![book](p_text.PNG)
+
 ##### Notes:
 
 - The system uses two JSON files to store patient and appointment data: our_patient.json and appointment_to_day.json.
