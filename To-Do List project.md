@@ -18,7 +18,7 @@ A to-do list is an effective tool for task management in various formats: pen-an
 ## The Program 
 
 - **Menu**: There is 4 menu options available 
-<img style='padding-top: 20px; padding-bottom: 20px' src='menu.png' >
+<img style='padding-top: 20px; padding-bottom: 20px' src='Menu.png' >
 
 1. Adding The task to the list
 <img style='padding-top: 20px; padding-bottom: 20px' src=addingTask.png>
