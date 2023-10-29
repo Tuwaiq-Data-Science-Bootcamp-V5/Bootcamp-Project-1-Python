@@ -1,35 +1,19 @@
 # Bootcamp-Project-1-Python
-### Based on what you’ve learned until now, create a project of your choosing (impress us with your imagination). This project must at least satisfy the following minimum requirements:
+## Beauty Care Website
+### The Beauty Care website aims to provide valuable tips and information for maintaining and enhancing the beauty of the skin, in addition to offering various personal care services. The website features a user-friendly interface and provides browsing and booking capabilities for users.
 
-- Use at least 3 different data types.
-- Use lists or dictionaries or tuples or sets.
-- Use loops.
-- Use functions that return an output.
-- Use conditions.
-- Use a Lambda function.
+* Features
+- Skin Care Tips and Cosmetics Usage: The website includes a dedicated section that offers valuable tips and information to users regarding proper skin care and the use of cosmetic products.
 
+- Service Browsing and Booking: The website provides an easy-to-use interface for browsing and selecting from a diverse range of services offered. Users can easily choose the service they desire and make a booking.
 
+- Login and Account Management: The website allows users to create personal accounts and log in to access the full features of the site. Users can modify their account information and track the status of their orders.
 
-## Example: Riyadh Season Reservations
+- Service Management for Staff: Staff members can log in to access the service management interface. They can add new services and monitor the status of user requests.
 
-**Overview:** An online website that shows different events. The visitor should be able to do the following tasks for the store to function properly.
+- Order Tracking for Users: Users can track the status of their service orders through the Orders section. Updates regarding the order status and relevant expectations will be provided.
 
-As a visitor, I should be able to do the following:
+*  Basic Requirements
+- Using the website requires logging in. Users can create their personal accounts and log in to benefit from the full features available.
 
-- Browse Events.
-- View the event info (summary, time, price, place, etc.)
-- Search for an Event.
-- Get recommendations for my next visit based on my ticket purchase history.
-- Add tickets to the shopping cart.
-- Remove a ticket from the shopping cart.
-- List the tickets in my shopping cart.
-- Modify the number of the ticket (by default one ticket).
-- Continue to checkout.
-- Get a QR code for my ticket.
-- Review my coming events.
-
-## Final Deliverables:
-- Notebook file(.ipynb).
-- README.md file.
-- Due Date: Sun 29, at 11:00 AM.
-- The Final presentation will be on Sunday (5 min for each one).
+- Staff members should have special accounts that grant them access rights to the service management interface.

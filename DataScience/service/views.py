@@ -5,13 +5,28 @@ from .models import Service , ServiceRequest
 
 # Create your views here.
 
-add_Service = lambda request: redirect("users:login_view") if not request.user.is_staff else (
-    redirect("service:all_services_view") if request.method == "POST" else render(request, 'service/add_Service.html')
-)
+def add_Service(request: HttpRequest):
+    if not request.user.is_staff:
+        return redirect("users:login_view")
+    
+    if request.method == "POST":
+        
+        #adding a service
+        new_Service = Service(title=request.POST["title"], description=request.POST["description"],  image=request.FILES["image"])
+        new_Service.save()
+        
+        return redirect("service:all_services_view")
+    
+    return render(request,'service/add_Service.html')
 
-all_services_view = lambda request: render(request, "service/services.html", context={"services": Service.objects.all()})
+def all_services_view(request: HttpRequest):
+    service= Service.objects.all()
+    return render(request, "service/services.html", context = {"services" : service})
 
-service_detail = lambda request, service_id: render(request, "service/service_detail.html", {"service": Service.objects.get(id=service_id)})
+def service_detail(request: HttpRequest,service_id):    
+    service=Service.objects.get(id=service_id)    
+    return render(request, "service/service_detail.html",{"service":service})
+
 
 def service_update_view(request:HttpRequest, service_id):
     
@@ -65,7 +80,7 @@ def users_request(request: HttpRequest):
 def users_request_update(request: HttpRequest, request_id):
     service_request=ServiceRequest.objects.get(id=request_id)
     
-    if request.method == "POST":
+    if  request.method == "POST":
         service_request.status =request.POST['status']
         service_request.save()
     

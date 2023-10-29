@@ -5,13 +5,7 @@ from django.contrib.auth import authenticate,login,logout
 
 # Create your views here.
 
-def sign_up(request : HttpRequest):
-    
-    if request.method == "POST":
-        new_user = User.objects.create_user(first_name=request.POST["first_name"], last_name=request.POST["last_name"], username=request.POST["username"], email=request.POST["email"], password=request.POST["password"], )
-        new_user.save()
-        return redirect("users:login_view")
-    return render(request, "users/sign_up.html")
+sign_up = lambda request: redirect("users:login_view") if request.method == "POST" and (new_user := User.objects.create_user(first_name=request.POST["first_name"], last_name=request.POST["last_name"], username=request.POST["username"], email=request.POST["email"], password=request.POST["password"])) else render(request, "users/sign_up.html")
 
 def contact(request : HttpRequest):
     return render(request, "users/contact.html")
