@@ -1,0 +1,18 @@
+# Project Title
+
+borrowed management system 
+
+## Description
+
+it is a command-line that connected with Database , the DB stored the available books in the library that allowed to borrowed.
+the system has the following features:
+
+- Adding user to DB
+- Retrive the user information from the DB
+- complete the borrowing process
+- Return the borrowe books 
+
+
+
+
+
