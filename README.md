@@ -1,35 +1,28 @@
 # Bootcamp-Project-1-Python
-### Based on what you’ve learned until now, create a project of your choosing (impress us with your imagination). This project must at least satisfy the following minimum requirements:
 
-- Use at least 3 different data types.
-- Use lists or dictionaries or tuples or sets.
-- Use loops.
-- Use functions that return an output.
-- Use conditions.
-- Use a Lambda function.
+## Movie Collection Organizer
+
+This program creates an organized and well-structured movie library catalog that enhances your movie collection by providing additional details, including movie posters.
+
+**Program Overview**
+
+The program accomplishes the following tasks:
+
+- **Collect Path to Movie Library**: It starts by collecting the path to your movie library directory.
+
+- **List Movies**: Using the `os` and `re` modules, the program generates a list of all the movies found in the specified directory.
+
+- **IMDb Lookup**: For each movie, the program queries the IMDb database using the `IMDb` package to gather information.
+
+- **Movie Data Retrieval**: It retrieves essential movie data, such as posters, ratings, genres, release year, and plot summaries.
+
+- **Markdown Catalog**: The program compiles a catalog of movies and their corresponding data in a markdown file named **My_Movies.md** within the movie library folder.
+
+- **Embedded Posters**: To enhance the catalog, movie posters are encoded as base64 and seamlessly embedded in the markdown file.
+
+A sample of the **My_Movies.md** file is provided with the code.
 
 
 
-## Example: Riyadh Season Reservations
 
-**Overview:** An online website that shows different events. The visitor should be able to do the following tasks for the store to function properly.
 
-As a visitor, I should be able to do the following:
-
-- Browse Events.
-- View the event info (summary, time, price, place, etc.)
-- Search for an Event.
-- Get recommendations for my next visit based on my ticket purchase history.
-- Add tickets to the shopping cart.
-- Remove a ticket from the shopping cart.
-- List the tickets in my shopping cart.
-- Modify the number of the ticket (by default one ticket).
-- Continue to checkout.
-- Get a QR code for my ticket.
-- Review my coming events.
-
-## Final Deliverables:
-- Notebook file(.ipynb).
-- README.md file.
-- Due Date: Sun 29, at 11:00 AM.
-- The Final presentation will be on Sunday (5 min for each one).
