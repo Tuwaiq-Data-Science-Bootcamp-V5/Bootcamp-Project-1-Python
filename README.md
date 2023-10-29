@@ -21,13 +21,13 @@ This is a simple Python code for a hospital management system. It allows patient
 **The new appointment has been added to our database:<br />**
 
 ![book](Am.PNG)
-**how to add now patient?<br />** 
+**<br />how to add now patient?<br />** 
 
 ![book](add_p.PNG)
 **The new patient has been added to our database:<br />**
 
 ![book](add_db.PNG)
-**The doctor:<br />**
+**<br />The doctor:<br />**
 
 ![book](doc.PNG)
 **The code creates a text file and adds patient appointment information to it:<br />**
