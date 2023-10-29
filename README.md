@@ -1,35 +1,24 @@
-# Bootcamp-Project-1-Python
-### Based on what you’ve learned until now, create a project of your choosing (impress us with your imagination). This project must at least satisfy the following minimum requirements:
-
-- Use at least 3 different data types.
-- Use lists or dictionaries or tuples or sets.
-- Use loops.
-- Use functions that return an output.
-- Use conditions.
-- Use a Lambda function.
+# Hitman remake by Nour 
 
 
+The game takes place at space where hitman tries to take down a spaceship that trun horeses into slime 
 
-## Example: Riyadh Season Reservations
+## Characters:
 
-**Overview:** An online website that shows different events. The visitor should be able to do the following tasks for the store to function properly.
 
-As a visitor, I should be able to do the following:
+| Hitman | Spaceship | Horse | Sime 
+| ----------- | ----------- | ----------- |
+| <img src="https://github.com/013nour/Bootcamp-Project-1-Python/blob/main/Asset/P1.png" width="200" height="200"> | <img src="https://github.com/013nour/Bootcamp-Project-1-Python/blob/main/Asset/alien4.png" width="200" height="200"> | <img src="https://github.com/013nour/Bootcamp-Project-1-Python/blob/main/Asset/Horse1.png" width="200" height="200"> | <img src="https://github.com/013nour/Bootcamp-Project-1-Python/blob/main/Asset/slime0.png" width="200" height="200">|
 
-- Browse Events.
-- View the event info (summary, time, price, place, etc.)
-- Search for an Event.
-- Get recommendations for my next visit based on my ticket purchase history.
-- Add tickets to the shopping cart.
-- Remove a ticket from the shopping cart.
-- List the tickets in my shopping cart.
-- Modify the number of the ticket (by default one ticket).
-- Continue to checkout.
-- Get a QR code for my ticket.
-- Review my coming events.
 
-## Final Deliverables:
-- Notebook file(.ipynb).
-- README.md file.
-- Due Date: Sun 29, at 11:00 AM.
-- The Final presentation will be on Sunday (5 min for each one).
+* Each the player and the enemy are given 3 stricks to win, if either side lose it will expload. 
+* The player bullets does not effect the horse 
+* The enemy bullts turns the horse into slime 
+* The slime attacks the player only and can be taked down in one strick 
+
+##Keys :
+
+| UP  | DOWN | SPACE |
+| ----------- | ----------- | ----------- |
+| Move up | Move Down | Shoot 
+
