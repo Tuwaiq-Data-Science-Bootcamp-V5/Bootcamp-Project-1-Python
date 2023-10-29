@@ -1,0 +1,4 @@
+patient name :Ali	appointment time :1 to 2
+patient name :Khaled	appointment time :3 to 4
+patient name :Omar	appointment time :5 to 6
+patient name :Ahmed	appointment time :7 to 8

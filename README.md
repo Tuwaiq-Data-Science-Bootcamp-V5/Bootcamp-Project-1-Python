@@ -1,35 +1,44 @@
-# Bootcamp-Project-1-Python
-### Based on what you’ve learned until now, create a project of your choosing (impress us with your imagination). This project must at least satisfy the following minimum requirements:
-
-- Use at least 3 different data types.
-- Use lists or dictionaries or tuples or sets.
-- Use loops.
-- Use functions that return an output.
-- Use conditions.
-- Use a Lambda function.
+# Ali Hospital System
 
 
+### introduction
+This is a simple Python code for a hospital management system. It allows patients to schedule appointments, verify if they have an appointment, if they do not have account they can create one. It also allows doctors to view their information, change their status, and view patients' appointments information.
 
-## Example: Riyadh Season Reservations
+#### To use the system:
 
-**Overview:** An online website that shows different events. The visitor should be able to do the following tasks for the store to function properly.
+1. Run the code in a Python interpreter.
+2. Enter your user type:
+    -  1 for existing patient
+    -  2 for new patient
+    -  3 for doctor
+3. Enter your username and ID.
+4. Follow the prompts on the screen.
 
-As a visitor, I should be able to do the following:
+#### Example:
+**how to book an appointment?**
+![book](how_to_book_an.PNG)
+**The new appointment has been added to our database:**
+![book](Am.PNG)
+**how to add now patient?**
+![book](add_p.PNG)
+**The new patient has been added to our database:**
+![book](add_db.PNG)
+**The doctor:**
+![book](doc.PNG)
+**The code creates a text file and adds patient appointment information to it:**
+![book](p_text.PNG)
+##### Notes:
 
-- Browse Events.
-- View the event info (summary, time, price, place, etc.)
-- Search for an Event.
-- Get recommendations for my next visit based on my ticket purchase history.
-- Add tickets to the shopping cart.
-- Remove a ticket from the shopping cart.
-- List the tickets in my shopping cart.
-- Modify the number of the ticket (by default one ticket).
-- Continue to checkout.
-- Get a QR code for my ticket.
-- Review my coming events.
+- The system uses two JSON files to store patient and appointment data: our_patient.json and appointment_to_day.json.
+- The system uses a dictionary to store doctor data: Doctors.
+- The system uses a function called get_the_names() to get a list of all the patient names in the our_patient dictionary.
+- The system uses a function called find_key_by_value() to find the key of a value in a dictionary.
 
-## Final Deliverables:
-- Notebook file(.ipynb).
-- README.md file.
-- Due Date: Sun 29, at 11:00 AM.
-- The Final presentation will be on Sunday (5 min for each one).
+##### project requirements:
+- At least 3 different data types: strings (e.g., name, schedule), integers (e.g., id, num_su), and floats (e.g., salary)
+- Lists or dictionaries or tuples or sets: dictionaries (e.g., our_patient, Doctors)
+- Loops: for loop (e.g., for i in range(0,len(appointment_to_day)))
+- Functions that return an output: get_the_names(), find_key_by_value()
+- Conditions: if statements (e.g., if user == "1":, if schedule=="y"\:)
+- A lambda function: load_patient_db = lambda :dict(json.load(open('our_patient.json', 'r')))
+
